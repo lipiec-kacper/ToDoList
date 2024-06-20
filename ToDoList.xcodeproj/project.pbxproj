@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F443960F2C24EF440002354B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443960E2C24EF440002354B /* HeaderView.swift */; };
 		F4AE29BE2C24B67C00AC2AB9 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE29BD2C24B67C00AC2AB9 /* ToDoListApp.swift */; };
 		F4AE29C02C24B67C00AC2AB9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE29BF2C24B67C00AC2AB9 /* MainView.swift */; };
 		F4AE29C22C24B67E00AC2AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AE29C12C24B67E00AC2AB9 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F443960E2C24EF440002354B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F4AE29BA2C24B67C00AC2AB9 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AE29BD2C24B67C00AC2AB9 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		F4AE29BF2C24B67C00AC2AB9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				F4AE29FD2C24C04500AC2AB9 /* LoginView.swift */,
 				F4AE29FF2C24C05D00AC2AB9 /* RegisterView.swift */,
 				F4AE2A012C24C0F400AC2AB9 /* ToDoListItemView.swift */,
+				F443960E2C24EF440002354B /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AE29FE2C24C04500AC2AB9 /* LoginView.swift in Sources */,
+				F443960F2C24EF440002354B /* HeaderView.swift in Sources */,
 				F4AE29C02C24B67C00AC2AB9 /* MainView.swift in Sources */,
 				F4AE2A122C24C20A00AC2AB9 /* RegisterViewViewModel.swift in Sources */,
 				F4AE2A082C24C1B300AC2AB9 /* MainViewViewModel.swift in Sources */,

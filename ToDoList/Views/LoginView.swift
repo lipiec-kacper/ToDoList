@@ -8,29 +8,43 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        VStack{
+        NavigationView{
+            VStack{
             //Header
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(Color.pink)
-
-                VStack {
-                    Text("To Do List")
-                        .font(.system(size: 50))
-                        .foregroundColor(Color.white)
-                        .bold()
-
-                    Text("Get things done")
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white)
+            HeaderView()
+            //Login Form
+            Form{
+                TextField("Email Address", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                SecureField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                Button {
+                    //Attempt log in
+                }label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.blue)
+                        
+                        Text("Log In")
+                            .foregroundColor(Color.white)
+                            .bold()
+                    }
                 }
             }
-            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-            //Login Form
-            
             
             //Create Account
+            VStack{
+                Text("New around here ?")
+                
+                NavigationLink("Create An Account", destination: RegisterView())
+            }
+            Spacer()
+            }
         }
     }
 }
