@@ -16,26 +16,18 @@ struct LoginView: View {
         NavigationView{
             VStack{
             //Header
-            HeaderView()
+                HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, background: .pink)
             //Login Form
             Form{
                 TextField("Email Address", text: $email)
                     .textFieldStyle(DefaultTextFieldStyle())
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
-                Button {
-                    //Attempt log in
-                }label: {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("Log In")
-                            .foregroundColor(Color.white)
-                            .bold()
-                    }
+                TLButton(text: "Login In"){
+                    //Attempt to login 
                 }
             }
+            .offset(y:-50)
             
             //Create Account
             VStack{
